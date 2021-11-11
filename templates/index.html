@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Amazon IVS Custom Player Controls demo</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+
+    <script src="https://player.live-video.net/1.5.0/amazon-ivs-player.min.js"></script>
+    <script src="/static/js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="player-wrapper">
+      <div id="address">{{address}}</div>
+      <div class="aspect-spacer"></div>
+      <div class="pos-absolute full-width full-height top-0">
+        <video id="video-player" playsinline controls autoplay ></video>
+      </div>
+    </div>
+    
+  </body>
+</html>
+
