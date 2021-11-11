@@ -1,0 +1,10 @@
+class Config(object):
+    AWS_ACCESS_KEY_ID=''
+    AWS_SECRET_ACCESS_KEY=''
+    REGION_NAME=''
+
+    DYNAMODB_TABLE=''
+    DYNAMODB_TABLE_KEY=''
+    CHANNEL_NAME=''
+    CDN_PREFIX=''
+    MEDIA_SUFFIX=''

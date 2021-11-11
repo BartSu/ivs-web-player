@@ -9,11 +9,14 @@ import query
 
 app = Flask(__name__)
 
+import setting
+app.config.from_object('setting.Config')
+
 @app.route('/')
 def index():
-    channel_name = ''
-    cdn_prefix = ''
-    media_suffix = ''
+    channel_name = app.config['CHANNEL_NAME']
+    cdn_prefix = app.config['CDN_PREFIX']
+    media_suffix = app.config['MEDIA_SUFFIX']
     print(f"address from {channel_name}")
     address = query.query_address(channel_name)
     address = cdn_prefix + address + media_suffix
